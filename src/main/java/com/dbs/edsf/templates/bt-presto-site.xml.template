@@ -1,0 +1,146 @@
+<configuration>
+<property>
+ <name>DBS.presto.plugin.config.address</name>
+ <value>CONFIG_ENDPOINT:1600</value>
+ <description>DBS Config server endpoint host:port. Can provide multiple host:port pairs by using a comma delimiter.</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.pdp.tag</name>
+ <value>*</value>
+ <description>DBS PDP HA tag</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.pdp.domain</name>
+ <value>hiveds</value>
+ <description>DBS PDP Domain</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.audit.enabled</name>
+ <value>true</value>
+ <description>Enable the hdfs auditing via DBS plugin</description>
+ <type>boolean</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.audit.skip.actions</name>
+ <value>USE,DEALLOCATE,PREPARE</value>
+ <description>comma separated list of sql operations to avoid being audited</description>
+ <type>string</type>
+</property>
+<property>
+<name>DBS.presto.plugin.audit.skip.users</name>
+ <value>skipuser1, skipuser2</value>
+ <description>Comma separated list of users whose operations are not audited</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.catalogs.whitelist</name>
+ <value>system.runtime,system.metadata,system.jdbc</value>
+ <description>comma separated list of whitelisted schemas</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.kafka.metadata.broker.list</name>
+ <value>KAFKA_BROKER_FQDN:9093</value>
+ <description>kafka broker list for auditing</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.kafka.topic</name>
+ <value>ActivityMonitor</value>
+ <description>kafka topic for auditing</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.nodelay</name>
+ <value>true</value>
+ <description>Pool connections to PDP</description>
+ <type>boolean</type>
+</property> 
+<property> 
+ <name>DBS.presto.plugin.use.connection.pool</name>
+ <value>false</value>
+ <description>Pool connections to PDP</description>
+ <type>boolean</type>
+</property> 
+<property> 
+ <name>DBS.presto.plugin.pool.max.idle</name>
+ <value>100</value>
+ <description>Max idle connections to PDP</description>
+ <type>long</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.pool.min.idle</name>
+ <value>20</value>
+ <description>Min idle connections to PDP</description>
+ <type>long</type>
+</property>
+<property>
+  <name>DBS.presto.plugin.policy.redeploy.polling.interval.secs</name>
+  <value>30</value>
+  <description>hdfs plugin polling interval to detect whether policies have been redeployed, defaults to 30 seconds</description>
+  <type>long</type>
+</property>
+<property>
+ <name>DBS.kafka.producer.type</name>
+ <value>async</value>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.kafka.batch.num.messages</name>
+ <value>600</value>
+ <type>long</type>
+</property>
+<property>
+ <name>DBS.policyengine.client.config.refresh.interval.secs</name>
+ <value>300</value>
+ <type>long</type>
+ <description>Policy engine client's refresher polling interval (in sec). Default value is 300.</description> 
+</property>
+<property>
+ <name>DBS.policyengine.client.config.refresh.expedite.interval.secs</name>
+ <value>10</value>
+ <type>long</type>
+ <description>Policy engine client's refresher polling interval in expedited mode (in sec). Default value is 10.</description>
+</property>
+<property>
+ <name>DBS.policyengine.client.socket.timeout.secs</name>
+ <value>5</value>
+ <type>long</type>
+ <description>Policy engine client socket timeout (in sec). Default value is 5.</description> 
+</property>
+<property>
+ <name>DBS.presto.plugin.query.partitions.enabled</name>
+ <value>true</value>
+ <description>Enable partition tables to be queried</description>
+ <type>boolean</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.statsd.prefix</name>
+ <value>DBS-presto</value>
+ <description>statsd metric prefix</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.statsd.host</name>
+ <value>127.0.0.1</value>
+ <description>host to push metrics to</description>
+ <type>string</type>
+</property>
+<property>
+ <name>DBS.presto.plugin.statsd.port</name>
+ <value>8125</value>
+ <description>port to push metrics to</description>
+ <type>string</type>
+</property>
+<!--
+<property>
+ <name>DBS.presto.plugin.catalogs.hs2.parity.list</name>
+  <value>hivedemodb</value>
+  <description>comma separated list of catalogs to be considered for conversion of resource from <catalog>.<schema>.<table> to <schema>.<schema>.<table> </description>
+  <type>string</type>
+</property>
+-->
+</configuration>
