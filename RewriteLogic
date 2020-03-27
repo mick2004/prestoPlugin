@@ -1,0 +1,36 @@
+Input Query:
+
+~/Desktop/rambo/presto --server localhost:8082 --catalog hive --schema default --execute "Select * from userdb.table2 ";
+
+First code checks whether its case of impersonation and if it is then if the user is truster user
+
+Need API here
+
+
+DBSTableKeeper is called
+
+-------
+
+private static final String TABLE_NAME_PREFIX = "__DBS_t";
+   private static final Pattern UNION_SPLIT_PATTERN = Pattern.compile("(?i)UNION");
+   private static final Pattern GENERATED_VIEW_PATTERN = Pattern.compile("(?i)select[\\s]+DBS[\\s]+from[\\s]+__DBS_t[0-9]+");
+
+----------------------------
+
+
+
+It calls DBSRowFilterColumnMaskRewrite
+
+we get query :
+SELECT * FROM   (    SELECT DBS    FROM      __DBS_t1 )  table2
+
+which is replaced to :
+
+var 20 is hardcode to APS (there is connection to policy iengine and query is sent to PE)
+
+SELECT * FROM   (    APS )  table2
+
+
+
+
+query re-wrote to
