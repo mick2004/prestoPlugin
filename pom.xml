@@ -10,35 +10,35 @@
     <packaging>jar</packaging>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <presto.prestosql.version>302</presto.prestosql.version>
-        <presto.starburst.version>302-e.5</presto.starburst.version>
+        <presto.prestosql.version>333</presto.prestosql.version>
+        <presto.starburst.version>333-SNAPSHOT</presto.starburst.version>
     </properties>
 
 
     <dependencies>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-main</artifactId>
-            <version>323-e.1</version>
-            <scope>system</scope>
-<!--            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-main-323-e.1.jar</systemPath>-->
-            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-main-302-e.5.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-main</artifactId>-->
+<!--            <version>333-SNAPSHOT</version>-->
+<!--            <scope>system</scope>-->
+<!--&lt;!&ndash;            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-main-323-e.1.jar</systemPath>&ndash;&gt;-->
+<!--            <systemPath>/Users/abhisheksingh/APSProjects/presto/presto-spi/target/presto-spi-333-SNAPSHOT.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>io.prestosql</groupId>
             <artifactId>presto-spi</artifactId>
-            <version>323-e.1</version>
+            <version>333-SNAPSHOT</version>
             <scope>system</scope>
-            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-spi-323-e.1.jar</systemPath>
+            <systemPath>/Users/abhisheksingh/APSProjects/presto/presto-spi/target/presto-spi-333-SNAPSHOT.jar</systemPath>
         </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-parser</artifactId>
-            <version>323-e.1</version>
-            <scope>system</scope>
-<!--            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-parser-323-e.1.jar</systemPath>-->
-            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-parser-302-e.5.jar</systemPath>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-parser</artifactId>-->
+<!--            <version>323-e.1</version>-->
+<!--            <scope>system</scope>-->
+<!--&lt;!&ndash;            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-parser-323-e.1.jar</systemPath>&ndash;&gt;-->
+<!--            <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-parser-302-e.5.jar</systemPath>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>commons-net</groupId>
             <artifactId>commons-net</artifactId>
@@ -113,48 +113,48 @@
             <version>13.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-tests</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-hive</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-blackhole</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-hive-hadoop2</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-tpch</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-tpcds</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.prestosql</groupId>
-            <artifactId>presto-jdbc</artifactId>
-            <version>${presto.prestosql.version}</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-tests</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-hive</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-blackhole</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-hive-hadoop2</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-tpch</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-tpcds</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>io.prestosql</groupId>-->
+<!--            <artifactId>presto-jdbc</artifactId>-->
+<!--            <version>${presto.prestosql.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>mockwebserver</artifactId>
@@ -209,6 +209,7 @@
                     <!-- Run shade goal on package phase -->
                     <execution>
                         <phase>package</phase>
+
                         <goals>
                             <goal>shade</goal>
                         </goals>

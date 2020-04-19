@@ -48,301 +48,15 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-tests</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>presto-client</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>presto-main</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>bootstrap</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>concurrent</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>configuration</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>discovery-server</artifactId>
-          <groupId>io.airlift.discovery</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>json</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>node</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>slice</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>stats</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>tpch</artifactId>
-          <groupId>io.airlift.tpch</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>units</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>javax.inject</artifactId>
-          <groupId>javax.inject</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>okhttp</artifactId>
-          <groupId>com.squareup.okhttp3</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>joda-time</artifactId>
-          <groupId>joda-time</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jdbi3-core</artifactId>
-          <groupId>org.jdbi</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jmxutils</artifactId>
-          <groupId>org.weakref</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>h2</artifactId>
-          <groupId>com.h2database</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>log-manager</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-hive</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>presto-plugin-toolkit</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>hive-dwrf</artifactId>
-          <groupId>com.facebook.hive</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>presto-orc</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>presto-parquet</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>presto-memory-context</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>presto-rcfile</artifactId>
-          <groupId>io.prestosql</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>hive-apache</artifactId>
-          <groupId>io.prestosql.hive</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>libthrift</artifactId>
-          <groupId>org.apache.thrift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>aircompressor</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>event</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>fastutil</artifactId>
-          <groupId>it.unimi.dsi</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jol-core</artifactId>
-          <groupId>org.openjdk.jol</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>validation-api</artifactId>
-          <groupId>javax.validation</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>joda-to-java-time-bridge</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>aws-java-sdk-core</artifactId>
-          <groupId>com.amazonaws</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>aws-java-sdk-glue</artifactId>
-          <groupId>com.amazonaws</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>aws-java-sdk-s3</artifactId>
-          <groupId>com.amazonaws</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>util</artifactId>
-          <groupId>com.google.cloud.bigdataoss</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>gcsio</artifactId>
-          <groupId>com.google.cloud.bigdataoss</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>util-hadoop</artifactId>
-          <groupId>com.google.cloud.bigdataoss</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>gcs-connector</artifactId>
-          <groupId>com.google.cloud.bigdataoss</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>stats</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>bootstrap</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>concurrent</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>json</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>configuration</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jmxutils</artifactId>
-          <groupId>org.weakref</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>joda-time</artifactId>
-          <groupId>joda-time</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>javax.inject</artifactId>
-          <groupId>javax.inject</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>log-manager</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>slice</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>units</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-blackhole</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>concurrent</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-hive-hadoop2</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>hadoop-apache</artifactId>
-          <groupId>io.prestosql.hadoop</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-tpch</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>jackson-datatype-jdk8</artifactId>
-          <groupId>com.fasterxml.jackson.datatype</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>tpch</artifactId>
-          <groupId>io.airlift.tpch</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-tpcds</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>tpcds</artifactId>
-          <groupId>com.teradata.tpcds</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>joda-to-java-time-bridge</artifactId>
-          <groupId>io.airlift</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jackson-datatype-jdk8</artifactId>
-          <groupId>com.fasterxml.jackson.datatype</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>joda-time</artifactId>
-          <groupId>joda-time</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-jdbc</artifactId>
-      <version>302</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>com.squareup.okhttp3</groupId>
       <artifactId>mockwebserver</artifactId>
       <version>3.9.0</version>
       <scope>test</scope>
       <exclusions>
+        <exclusion>
+          <artifactId>okhttp</artifactId>
+          <groupId>com.squareup.okhttp3</groupId>
+        </exclusion>
         <exclusion>
           <artifactId>bcprov-jdk15on</artifactId>
           <groupId>org.bouncycastle</groupId>
@@ -350,10 +64,6 @@
         <exclusion>
           <artifactId>junit</artifactId>
           <groupId>junit</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>okhttp</artifactId>
-          <groupId>com.squareup.okhttp3</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -370,12 +80,12 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <artifactId>bval-jsr</artifactId>
-          <groupId>org.apache.bval</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>validation-api</artifactId>
           <groupId>javax.validation</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>bval-jsr</artifactId>
+          <groupId>org.apache.bval</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -386,12 +96,12 @@
       <scope>test</scope>
       <exclusions>
         <exclusion>
-          <artifactId>aopalliance</artifactId>
-          <groupId>aopalliance</groupId>
-        </exclusion>
-        <exclusion>
           <artifactId>javax.inject</artifactId>
           <groupId>javax.inject</groupId>
+        </exclusion>
+        <exclusion>
+          <artifactId>aopalliance</artifactId>
+          <groupId>aopalliance</groupId>
         </exclusion>
       </exclusions>
     </dependency>
@@ -413,29 +123,15 @@
     </dependency>
     <dependency>
       <groupId>io.prestosql</groupId>
-      <artifactId>presto-main</artifactId>
-      <version>323-e.1</version>
-      <scope>system</scope>
-      <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-main-302-e.5.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
       <artifactId>presto-spi</artifactId>
-      <version>323-e.1</version>
+      <version>333-SNAPSHOT</version>
       <scope>system</scope>
-      <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-spi-323-e.1.jar</systemPath>
-    </dependency>
-    <dependency>
-      <groupId>io.prestosql</groupId>
-      <artifactId>presto-parser</artifactId>
-      <version>323-e.1</version>
-      <scope>system</scope>
-      <systemPath>/Users/abhisheksingh/Desktop/rambo/starburstPresto/presto-server-323-e.1/lib/presto-parser-302-e.5.jar</systemPath>
+      <systemPath>/Users/abhisheksingh/APSProjects/presto/presto-spi/target/presto-spi-333-SNAPSHOT.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>
-    <presto.prestosql.version>302</presto.prestosql.version>
-    <presto.starburst.version>302-e.5</presto.starburst.version>
+    <presto.prestosql.version>333</presto.prestosql.version>
+    <presto.starburst.version>333-SNAPSHOT</presto.starburst.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
