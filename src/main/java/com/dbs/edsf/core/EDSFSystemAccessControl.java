@@ -35,10 +35,12 @@ public class EDSFSystemAccessControl implements SystemAccessControl {
 
     @Override
     public Optional<ViewExpression> getColumnMask(SystemSecurityContext context, CatalogSchemaTableName tableName, String columnName, Type type) {
-        //return Optional.empty();
-        final Optional<ViewExpression> viewExpression = Optional.of(
-                new ViewExpression("abhisheksingh" ,Optional.empty(), Optional.empty(), "mask("+columnName+")"));
-        return viewExpression;
+
+        System.out.println("TableName :"+tableName +",columnName "+columnName+",Type :"+type);
+        return Optional.empty();
+        //final Optional<ViewExpression> viewExpression = Optional.of(
+             //  new ViewExpression("abhisheksingh" ,Optional.empty(), Optional.empty(), "mask("+columnName+")"));
+        //return viewExpression;
 
 
     }
