@@ -1,6 +1,7 @@
 package com.dbs.edsf.core;
 
 import io.prestosql.spi.connector.CatalogSchemaTableName;
+import io.prestosql.spi.security.AccessDeniedException;
 import io.prestosql.spi.security.SystemAccessControl;
 import io.prestosql.spi.security.SystemSecurityContext;
 import io.prestosql.spi.security.ViewExpression;
@@ -8,8 +9,19 @@ import io.prestosql.spi.type.Type;
 
 import java.security.Principal;
 import java.util.Optional;
+import java.util.Set;
 
 public class EDSFSystemAccessControl implements SystemAccessControl {
+
+    @Override
+    public void checkCanAccessCatalog(SystemSecurityContext context, String catalogName) {
+        //AccessDeniedException.denyCatalogAccess(catalogName);
+    }
+
+    @Override
+    public void checkCanSelectFromColumns(SystemSecurityContext context, CatalogSchemaTableName table, Set<String> columns) {
+        //AccessDeniedException.denySelectColumns(table.toString(), columns);
+    }
 
     @Override
     public void checkCanSetSystemSessionProperty(SystemSecurityContext context, String propertyName) {
