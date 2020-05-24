@@ -126,12 +126,12 @@
       <artifactId>presto-spi</artifactId>
       <version>333-SNAPSHOT</version>
       <scope>system</scope>
-      <systemPath>/Users/abhisheksingh/APSProjects/presto/presto-spi/target/presto-spi-333-SNAPSHOT.jar</systemPath>
+      <systemPath>/Users/nambastha/rnd/tar_files/presto-spi-333.jar</systemPath>
     </dependency>
   </dependencies>
   <properties>
-    <presto.prestosql.version>333</presto.prestosql.version>
     <presto.starburst.version>333-SNAPSHOT</presto.starburst.version>
+    <presto.prestosql.version>333</presto.prestosql.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
