@@ -16,8 +16,6 @@ import static java.util.Objects.requireNonNull;
 public class EDSFSystemAccessControl implements SystemAccessControl {
 
 
-
-
     @Override
     public void checkCanAccessCatalog(SystemSecurityContext context, String catalogName) {
         //AccessDeniedException.denyCatalogAccess(catalogName);
@@ -144,6 +142,7 @@ public class EDSFSystemAccessControl implements SystemAccessControl {
         System.out.println("TableName :"+tableName +",columnName "+columnName+",Type :"+type);
         System.out.println("username  "+ context.getIdentity().getUser());
         System.out.println(tableName.getSchemaTableName());
+        //new ViewExpression(context.getIdentity().getUser() ,Optional.empty(), Optional.empty(), "maskdata("+columnName+")");
 
         // need to make a call from here for querying policies to see if access to the views are there or not.
 

@@ -8,15 +8,15 @@ import java.util.Arrays;
 
 public class EDSFPlugin implements Plugin {
 
-/*    @Override
+    @Override
     public Iterable<EventListenerFactory> getEventListenerFactories() {
         System.out.println("Inside EDSF Plugin EventListener");
-        return null;
-    }*/
+        return Arrays.asList(new EDSFEventListenerFactory());
+    }
 
     @Override
     public Iterable<SystemAccessControlFactory> getSystemAccessControlFactories() {
-        System.out.println("Inside EDSF Plugin");
+        System.out.println("Inside EDSF Plugin ");
         return Arrays.asList(new EDSFSystemAccessControlFactory());
     }
 
