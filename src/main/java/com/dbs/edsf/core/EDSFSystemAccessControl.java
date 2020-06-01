@@ -20,11 +20,19 @@ public class EDSFSystemAccessControl implements SystemAccessControl {
 
     //EDSFAccessControlTest edsfAccessControlTest = new EDSFAccessControlTest();
 
-    CacheMockData cacheMockData = new CacheMockData();
-    UserProfileCache userProfileCache =  new UserProfileCache();
-    UserTableOperationsCache userTableOperationsCache = new UserTableOperationsCache();
-    TableProfileColumnsCache tableProfileColumnsCache = new TableProfileColumnsCache();
+    CacheMockData cacheMockData ;
+    UserProfileCache userProfileCache ;
+    UserTableOperationsCache userTableOperationsCache ;
+    TableProfileColumnsCache tableProfileColumnsCache ;
     String profile ;
+
+    public EDSFSystemAccessControl(){
+        this.cacheMockData = new CacheMockData();
+        this.userProfileCache =  new UserProfileCache();
+        this.userTableOperationsCache = new UserTableOperationsCache();
+        this.tableProfileColumnsCache = new TableProfileColumnsCache();
+
+    }
 
     @Override
     public void checkCanKillQueryOwnedBy(SystemSecurityContext context, String queryOwner) {
