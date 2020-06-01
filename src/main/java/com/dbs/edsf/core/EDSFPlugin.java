@@ -6,6 +6,7 @@ import io.prestosql.spi.security.SystemAccessControlFactory;
 
 import java.util.Arrays;
 
+
 public class EDSFPlugin implements Plugin {
 
     @Override
@@ -16,9 +17,7 @@ public class EDSFPlugin implements Plugin {
 
     @Override
     public Iterable<SystemAccessControlFactory> getSystemAccessControlFactories() {
-        System.out.println("Inside EDSF Plugin ");
+        System.out.println("Inside EDSF Plugin SystemAccessControl ==> ");
         return Arrays.asList(new EDSFSystemAccessControlFactory());
     }
-
-
 }

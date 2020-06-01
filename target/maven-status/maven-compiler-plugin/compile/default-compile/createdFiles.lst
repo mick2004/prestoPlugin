@@ -1,5 +1,12 @@
+com/dbs/edsf/CacheModel/CacheMockData.class
+com/dbs/edsf/CacheModel/UserProfileCache.class
+com/dbs/edsf/CacheModel/TableProfileColumnsBUMapping.class
+com/dbs/edsf/CacheModel/TableProfileColumnsCache.class
 com/dbs/edsf/core/EDSFEventListener.class
 com/dbs/edsf/core/EDSFSystemAccessControlFactory.class
+com/dbs/edsf/CacheModel/mocktest.class
 com/dbs/edsf/core/EDSFEventListenerFactory.class
 com/dbs/edsf/core/EDSFSystemAccessControl.class
+com/dbs/edsf/CacheModel/UserTableOperationsCache.class
+com/dbs/edsf/CacheModel/UserOperationRLFMapping.class
 com/dbs/edsf/core/EDSFPlugin.class
